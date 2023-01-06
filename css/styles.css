@@ -1,0 +1,152 @@
+body {
+    background-color: var(--Very-dark-blue);
+    font-size: var(--Font-size);
+    font-family: var(--Font-family);
+    color: var(--White);
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 20em;
+    background-color: var(--Very-dark-blue-2);
+    margin: 1.5em;
+    padding: 1.25em;
+    border-radius: .75em;
+}
+
+.image__container {
+    position: relative;
+    width: 100%;
+    background-color: var(--Cyan);
+    border-radius: .75em;
+    transition: .5s ease;
+}
+
+.card__img {
+    border-radius: .5em;
+}
+
+.card__img--view {
+    width: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.card__img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+ 
+.image__container:hover .img__card--overlay  + .card__img--view {
+    display: block;
+} 
+
+.card__title {
+    margin: 1em 0 1em 0;
+    font-size: 1.25em;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.card__description {
+    margin: 0 0 1.25em 0;
+    color: var(--Soft-blue);
+    font-size: .85em;
+    font-weight: 300;
+}
+
+.card__info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card__price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card__image--eth,
+.card__image--clock {
+    width: 1em;
+}
+
+.price {
+    color: var(--Cyan);
+    margin: .25em;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.card__info--time-left {
+    margin: 0 0 0 3em;
+}
+
+.time--left {
+    color: var(--Soft-blue);
+    font-size: .85em;
+    margin: 0 0 0 1em;
+}
+
+.linebreak {
+    height: 1px;
+    width: 100%;
+    background-color: var(--Very-dark-blue-3);
+    border-radius: 1em;
+    margin: 2em 0 0 0;
+}
+
+.card__autor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2em 0 0 0;
+    color: var(--Soft-blue);
+}
+
+.card__image--autor {
+    width: 2em;
+    margin: 0 .75em 0 0;
+    border: 1px solid var(--White);
+    border-radius: 1em;
+}
+
+.autor {
+    color: var(--White);
+    transition: .2s ease;
+}
+
+.card__title:hover,
+.autor:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.attribution {
+    text-align: center;
+    font-size: .75em;
+    color: var(--White);
+}
+
+.attribution__link {
+    text-decoration: underline;
+    transition: .2s ease;
+}
+
+.attribution__link:hover {
+    color: var(--Cyan);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
